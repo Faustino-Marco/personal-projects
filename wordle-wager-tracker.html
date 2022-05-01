@@ -5,6 +5,22 @@
     <title>
         Wordle Wager Tracker
     </title>
+    <style>
+        table {
+            font-family: Arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+    <!-- <script src="app.js"></script> -->
 </head>
 
 <body>
@@ -13,15 +29,30 @@
         <nav>
             <ul>
                 <li>
-                    <a href="https://github.com/Faustino-Marco/personal-projects.html"> Personal Projects & Ideas Homepage </a>
+                    <a href="#"> PPI Homepage </a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
         <p>
-            Let's Do this
+            Enter today's date (MM/DD/YY) and choose Today's winner or <em>tie</em>.
         </p>
+        <hr>
+        Date: <input id="date" type="text" name="date">
+        <hr>
+        <button id="read1">Standalorian</button>
+        <button id="read2">San Yago</button>
+        <button id="read3">Morpheus</button>
+        <hr>
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>Winner/Tie</th>
+                <!-- <th>Streak</th> -->
+            </tr>
+            
+        </table>
     </main>
 </body>
 
